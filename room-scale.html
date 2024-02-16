@@ -77,8 +77,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let renderer = null;
       let scene = new Scene();
       let boundsRenderer = null;
-      scene.addNode(new Gltf2Node({url: '../media/gltf/camp/camp.gltf'}));
-      scene.addNode(new SkyboxNode({url: '../media/textures/eilenriede-park-2k.png'}));
+      scene.addNode(new Gltf2Node({url: './media/gltf/camp/camp.gltf'}));
+      scene.addNode(new SkyboxNode({url: './media/textures/eilenriede-park-2k.png'}));
       scene.standingStats(true);
 
       function initXR() {
@@ -146,7 +146,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         scene.setRenderer(renderer);
 
         // Loads a generic controller mesh.
-        scene.inputRenderer.setControllerMesh(new Gltf2Node({url: '../media/gltf/controller/controller.gltf'}));
+        scene.inputRenderer.setControllerMesh(new Gltf2Node({url: './media/gltf/controller/controller.gltf'}));
       }
 
       function updateBoundsRenderer(refSpace) {

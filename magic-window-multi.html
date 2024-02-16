@@ -330,13 +330,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
       // Create two XR Sessions
       let scene1 = new Scene();
-      scene1.addNode(new Gltf2Node({url: '../media/gltf/space/space.gltf'}));
-      scene1.addNode(new SkyboxNode({url: '../media/textures/milky-way-4k.png'}));
+      scene1.addNode(new Gltf2Node({url: './media/gltf/space/space.gltf'}));
+      scene1.addNode(new SkyboxNode({url: './media/textures/milky-way-4k.png'}));
       initXR(scene1);
 
       let scene2 = new Scene();
-      scene2.addNode(new Gltf2Node({url: '../media/gltf/cave/cave.gltf'}))
-      scene2.addNode(new SkyboxNode({url: '../media/textures/eilenriede-park-2k.png'}))
+      scene2.addNode(new Gltf2Node({url: './media/gltf/cave/cave.gltf'}))
+      scene2.addNode(new SkyboxNode({url: './media/textures/eilenriede-park-2k.png'}))
       initXR(scene2, {x: 0, y: -1.5, z: 0});
     </script>
   </body>
